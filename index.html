@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <div class="weather-container">
+    <!-- Search Section -->
+    <div class="search-row">
+      <div class="search-box">
+        <input type="text" id="city-input" placeholder="Enter city name.." />
+      </div>
+      <button onclick="getWeather()" class="search-button">
+        <span class="search-icon"><img  class="glass" src="images/search.png"></span>
+      </button>
+    </div>
+
+    <!-- Weather Info Section -->
+    <div class="weather-info" style="display: none;">
+      <img class="weather-icon" src="images/clouds.png" alt="Weather Icon" />
+      <h1 id="temperature">-- °C</h1>
+      <h2 id="city-name">City Name</h2>
+
+      <!-- Weather Details -->
+      <div class="details">
+        <!-- Humidity Block -->
+        <div class="col">
+          <img src="images/humidity.png" alt="Humidity Icon" />
+          <div>
+            <p id="humidity">--%</p>
+            <p style="color: white">Humidity</p>
+          </div>
+        </div>
+
+        <!-- Wind Speed Block -->
+        <div class="col">
+          <img src="images/wind.png" alt="Wind Icon" />
+          <div>
+            <p id="wind-speed">-- km/h</p>
+            <p style="color: white;">Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
