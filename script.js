@@ -17,7 +17,7 @@ async function getWeather()
             document.getElementById('temperature').innerText = `${data.main.temp.toFixed(0)}°C`;
             document.getElementById('city-name').innerText = `${data.name}`;
             document.getElementById('humidity').innerText = `${data.main.humidity}%`;
-            document.getElementById('wind-speed').innerText = `${data.wind.speed*18/5} km/h`
+            document.getElementById('wind-speed').innerText = `${(data.wind.speed * 18 / 5).toFixed(2)} km/h`;
 
               document.querySelector('.weather-info').style.display = 'block';
         }
