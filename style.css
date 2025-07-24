@@ -4,9 +4,31 @@ body{
   font-family: Arial, sans-serif;
   background-color : rgb(33 44 63);
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 30rem;
+  font-size: small;
 }
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  position: fixed;
+  top: 110px;
+  left: 0;
+  right: 0;;
+}
+
+.title h1{
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  display: none;
+}
+
 
 .weather-container{
   width: 100%;
@@ -15,8 +37,7 @@ body{
   padding: 20px;
   background: linear-gradient(135deg, #00feba, #5b548a);
   border-radius: 8px;
-  margin-top: 4rem;
-
+  margin-top: 60px;
 }
 
 .search-row {
@@ -71,13 +92,24 @@ body{
   margin-top: 20px;
 }
 
+.box-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .weather-icon{
     width: 120px;
     height: 120px;
     display: flex;
-   justify-content: center;  
-   align-items: center;
-   padding-left: 7rem;
+    justify-content: center;  
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 #temperature {

@@ -6,8 +6,10 @@
   <title>Weather App</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
+   
 </head>
 <body>
+  <div class="title"><h1>Weather App</h1></div>
   <div class="weather-container">
     <!-- Search Section -->
     <div class="search-row">
@@ -21,7 +23,9 @@
 
     <!-- Weather Info Section -->
     <div class="weather-info" style="display: none;">
-      <img class="weather-icon" src="images/clouds.png" alt="Weather Icon" />
+      <div class="box-icon">
+      <img class="weather-icon" src="images/clouds.png" alt="Weather Icon"/>
+      </div>
       <h1 id="temperature">-- °C</h1>
       <h2 id="city-name">City Name</h2>
 
